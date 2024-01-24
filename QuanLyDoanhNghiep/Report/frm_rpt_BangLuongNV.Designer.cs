@@ -49,7 +49,7 @@
             this.Controls.Add(this.reportViewer1);
             this.Name = "frm_rpt_BangLuongNV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frm_rpt_BangLuongNV";
+            this.Text = "BÁO CÁO LƯƠNG NHÂN VIÊN";
             this.Load += new System.EventHandler(this.frm_rpt_BangLuongNV_Load);
             this.ResumeLayout(false);
 

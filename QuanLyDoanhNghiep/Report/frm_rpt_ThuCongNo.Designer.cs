@@ -49,7 +49,7 @@
             this.Controls.Add(this.reportViewer1);
             this.Name = "frm_rpt_ThuCongNo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frm_rpt_ThuCongNo";
+            this.Text = "BÁO CÁO THỐNG KÊ THU CÔNG NỢ";
             this.Load += new System.EventHandler(this.frm_rpt_ThuCongNo_Load);
             this.ResumeLayout(false);
 

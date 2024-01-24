@@ -51,7 +51,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frm_rpt_DonDatHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frm_rpt_DonDatHang";
+            this.Text = "PHIẾU ĐẶT HÀNG";
             this.Load += new System.EventHandler(this.frm_rpt_DonDatHang_Load);
             this.ResumeLayout(false);
 

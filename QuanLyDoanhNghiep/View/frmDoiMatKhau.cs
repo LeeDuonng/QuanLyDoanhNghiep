@@ -49,5 +49,10 @@ namespace QuanLyDoanhNghiep.View
                 ev.QFrmThongBaoError("Đổi mật khẩu không thành công. Vui lòng thử lại"); 
             }
         }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

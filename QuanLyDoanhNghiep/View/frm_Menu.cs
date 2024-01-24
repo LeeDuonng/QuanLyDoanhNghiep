@@ -237,8 +237,7 @@ namespace QuanLyDoanhNghiep.View
 
         private void barBtnDoiMatKhau_ItemClick(object sender, ItemClickEventArgs e)
         {
-            var f = new frmDoiMatKhau();
-            AddForm(f);
+            new frmDoiMatKhau().ShowDialog();
         }
 
         private void barBtnDangXuat_ItemClick(object sender, ItemClickEventArgs e)

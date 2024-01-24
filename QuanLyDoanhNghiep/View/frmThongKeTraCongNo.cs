@@ -48,5 +48,12 @@ namespace QuanLyDoanhNghiep.View
         {
             LoadDGV();
         }
+
+        private void dgv_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string id = dgv.Rows[e.RowIndex].Cells["MaPhieuNhap"].Value.ToString();
+            new frmDanhSachChiTietPhieuNhap(id).ShowDialog();
+            LoadDGV();
+        }
     }
 }

@@ -39,7 +39,7 @@ namespace QuanLyDoanhNghiep
         private void btnThem_Click(object sender, EventArgs e)
         {
             frmThongTinSanPham secondForm = new frmThongTinSanPham(null);
-            secondForm.Show();
+            secondForm.ShowDialog();
             LoadDGV();
         }
 

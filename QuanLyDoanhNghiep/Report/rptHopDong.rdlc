@@ -221,7 +221,7 @@
         <Top>1.0055cm</Top>
         <Left>3.2553cm</Left>
         <Height>0.6cm</Height>
-        <Width>8.32083cm</Width>
+        <Width>11.94562cm</Width>
         <ZIndex>6</ZIndex>
         <Style>
           <Border>
@@ -301,74 +301,6 @@
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
       </Textbox>
-      <Textbox Name="NgayBatDau">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>=First(Fields!NgayBatDau.Value, "DataSet")</Value>
-                <Style>
-                  <FontSize>13pt</FontSize>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style>
-              <TextAlign>Left</TextAlign>
-            </Style>
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>NgayBatDau</rd:DefaultName>
-        <Top>3.33467cm</Top>
-        <Left>6.45676cm</Left>
-        <Height>0.6cm</Height>
-        <Width>8.32083cm</Width>
-        <ZIndex>9</ZIndex>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
-      <Textbox Name="NgayKetThuc">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>=First(Fields!NgayKetThuc.Value, "DataSet")</Value>
-                <Style>
-                  <FontSize>13pt</FontSize>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style>
-              <TextAlign>Left</TextAlign>
-            </Style>
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>NgayKetThuc</rd:DefaultName>
-        <Top>4.07578cm</Top>
-        <Left>6.88009cm</Left>
-        <Height>0.6cm</Height>
-        <Width>8.32083cm</Width>
-        <ZIndex>10</ZIndex>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
       <Textbox Name="NgayLuong">
         <CanGrow>true</CanGrow>
         <KeepTogether>true</KeepTogether>
@@ -390,6 +322,70 @@
         <rd:DefaultName>NgayLuong</rd:DefaultName>
         <Top>4.85217cm</Top>
         <Left>4.28717cm</Left>
+        <Height>0.6cm</Height>
+        <Width>8.32083cm</Width>
+        <ZIndex>9</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="NgayBatDau">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!NgayBatDau.Value, "DataSet")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>NgayBatDau</rd:DefaultName>
+        <Top>3.33467cm</Top>
+        <Left>6.45676cm</Left>
+        <Height>0.6cm</Height>
+        <Width>8.74416cm</Width>
+        <ZIndex>10</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="NgayKetThuc">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!NgayKetThuc.Value, "DataSet")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>NgayKetThuc</rd:DefaultName>
+        <Top>4.11106cm</Top>
+        <Left>6.88009cm</Left>
         <Height>0.6cm</Height>
         <Width>8.32083cm</Width>
         <ZIndex>11</ZIndex>

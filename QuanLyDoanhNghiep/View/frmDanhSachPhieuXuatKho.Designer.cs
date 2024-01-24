@@ -46,7 +46,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(292, 11);
+            this.label1.Location = new System.Drawing.Point(565, 11);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(333, 37);
@@ -110,7 +110,7 @@
             this.dgvDonDatHang.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvDonDatHang.RowTemplate.Height = 24;
             this.dgvDonDatHang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDonDatHang.Size = new System.Drawing.Size(886, 470);
+            this.dgvDonDatHang.Size = new System.Drawing.Size(1432, 678);
             this.dgvDonDatHang.TabIndex = 53;
             this.dgvDonDatHang.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.dgvDonDatHang.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -147,7 +147,7 @@
             this.txtTimKiem.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtTimKiem.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtTimKiem.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtTimKiem.Location = new System.Drawing.Point(657, 72);
+            this.txtTimKiem.Location = new System.Drawing.Point(1203, 72);
             this.txtTimKiem.Margin = new System.Windows.Forms.Padding(2);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.PasswordChar = '\0';
@@ -162,7 +162,7 @@
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(533, 72);
+            this.label4.Location = new System.Drawing.Point(1079, 72);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(116, 30);
@@ -173,7 +173,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(886, 587);
+            this.ClientSize = new System.Drawing.Size(1432, 795);
             this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dgvDonDatHang);

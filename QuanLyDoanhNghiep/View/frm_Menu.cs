@@ -25,6 +25,7 @@ namespace QuanLyDoanhNghiep.View
         {
             InitializeComponent();
             PhanQuyen();
+            AddForm(new frmTrangChu());
         }
         public void AddForm(Form f)
         {
@@ -49,7 +50,6 @@ namespace QuanLyDoanhNghiep.View
             ribbonPageGroupKho.Visible = false;
             ribbonPageGroupKinhDoanh.Visible = false;
             ribbonPageGroupNhanSu.Visible = false;
-            ribbonPageGroupTaiChinh.Visible = false;
 
 
             msql = "exec LoadPhanQuyen N'"+ frmDangNhap.MaNguoiDung +"'";
@@ -69,7 +69,6 @@ namespace QuanLyDoanhNghiep.View
                         ribbonPageGroupKho.Visible = true;
                         ribbonPageGroupKinhDoanh.Visible = true;
                         ribbonPageGroupNhanSu.Visible = true;
-                        ribbonPageGroupTaiChinh.Visible = true;
                         break;
                     case "Phòng giám đốc":
                         ribbonKho.Visible = true;
@@ -80,7 +79,6 @@ namespace QuanLyDoanhNghiep.View
                         ribbonPageGroupKho.Visible = true;
                         ribbonPageGroupKinhDoanh.Visible = true;
                         ribbonPageGroupNhanSu.Visible = true;
-                        ribbonPageGroupTaiChinh.Visible = true;
                         break;
                     case "Phòng kinh doanh":
                         ribbonKinhDoanh.Visible = true;
@@ -96,7 +94,6 @@ namespace QuanLyDoanhNghiep.View
                         break;
                     case "Phòng tài chính":
                         ribbonTaiChinh.Visible = true;
-                        ribbonPageGroupTaiChinh.Visible = true;
                         break;
                     default:
                         ev.QFrmThongBao("Nhân sự này chưa phân phòng ban. Vui lòng liên hệ bộ phận nhân sự !");

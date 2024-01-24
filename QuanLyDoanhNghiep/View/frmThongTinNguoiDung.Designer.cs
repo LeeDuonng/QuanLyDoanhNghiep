@@ -52,6 +52,7 @@
             // 
             // txtCCCD
             // 
+            this.txtCCCD.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtCCCD.BackColor = System.Drawing.Color.Transparent;
             this.txtCCCD.BaseColor = System.Drawing.Color.White;
             this.txtCCCD.BorderColor = System.Drawing.Color.Black;
@@ -60,7 +61,7 @@
             this.txtCCCD.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtCCCD.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtCCCD.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCCCD.Location = new System.Drawing.Point(212, 377);
+            this.txtCCCD.Location = new System.Drawing.Point(314, 586);
             this.txtCCCD.Margin = new System.Windows.Forms.Padding(2);
             this.txtCCCD.Name = "txtCCCD";
             this.txtCCCD.PasswordChar = '\0';
@@ -71,6 +72,7 @@
             // 
             // txtDiaChi
             // 
+            this.txtDiaChi.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtDiaChi.BackColor = System.Drawing.Color.Transparent;
             this.txtDiaChi.BaseColor = System.Drawing.Color.White;
             this.txtDiaChi.BorderColor = System.Drawing.Color.Black;
@@ -79,17 +81,18 @@
             this.txtDiaChi.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtDiaChi.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtDiaChi.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiaChi.Location = new System.Drawing.Point(582, 310);
+            this.txtDiaChi.Location = new System.Drawing.Point(684, 490);
             this.txtDiaChi.Margin = new System.Windows.Forms.Padding(2);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.PasswordChar = '\0';
             this.txtDiaChi.Radius = 10;
             this.txtDiaChi.SelectedText = "";
-            this.txtDiaChi.Size = new System.Drawing.Size(167, 39);
+            this.txtDiaChi.Size = new System.Drawing.Size(244, 39);
             this.txtDiaChi.TabIndex = 123;
             // 
             // txtSoDienThoai
             // 
+            this.txtSoDienThoai.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtSoDienThoai.BackColor = System.Drawing.Color.Transparent;
             this.txtSoDienThoai.BaseColor = System.Drawing.Color.White;
             this.txtSoDienThoai.BorderColor = System.Drawing.Color.Black;
@@ -98,7 +101,7 @@
             this.txtSoDienThoai.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtSoDienThoai.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtSoDienThoai.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoDienThoai.Location = new System.Drawing.Point(211, 310);
+            this.txtSoDienThoai.Location = new System.Drawing.Point(313, 490);
             this.txtSoDienThoai.Margin = new System.Windows.Forms.Padding(2);
             this.txtSoDienThoai.Name = "txtSoDienThoai";
             this.txtSoDienThoai.PasswordChar = '\0';
@@ -109,12 +112,13 @@
             // 
             // btnNu
             // 
+            this.btnNu.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnNu.BaseColor = System.Drawing.SystemColors.Control;
             this.btnNu.CheckedOffColor = System.Drawing.Color.Gray;
             this.btnNu.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.btnNu.FillColor = System.Drawing.Color.White;
             this.btnNu.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNu.Location = new System.Drawing.Point(686, 249);
+            this.btnNu.Location = new System.Drawing.Point(788, 399);
             this.btnNu.Margin = new System.Windows.Forms.Padding(2);
             this.btnNu.Name = "btnNu";
             this.btnNu.Size = new System.Drawing.Size(63, 33);
@@ -123,12 +127,13 @@
             // 
             // btnNam
             // 
+            this.btnNam.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnNam.BaseColor = System.Drawing.SystemColors.Control;
             this.btnNam.CheckedOffColor = System.Drawing.Color.Gray;
             this.btnNam.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.btnNam.FillColor = System.Drawing.Color.White;
             this.btnNam.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNam.Location = new System.Drawing.Point(604, 249);
+            this.btnNam.Location = new System.Drawing.Point(706, 399);
             this.btnNam.Margin = new System.Windows.Forms.Padding(2);
             this.btnNam.Name = "btnNam";
             this.btnNam.Size = new System.Drawing.Size(80, 33);
@@ -137,6 +142,7 @@
             // 
             // DateNgaySinh
             // 
+            this.DateNgaySinh.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.DateNgaySinh.BackColor = System.Drawing.Color.Transparent;
             this.DateNgaySinh.BaseColor = System.Drawing.Color.White;
             this.DateNgaySinh.BorderColor = System.Drawing.Color.Black;
@@ -146,7 +152,7 @@
             this.DateNgaySinh.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DateNgaySinh.ForeColor = System.Drawing.Color.Black;
             this.DateNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DateNgaySinh.Location = new System.Drawing.Point(212, 246);
+            this.DateNgaySinh.Location = new System.Drawing.Point(314, 396);
             this.DateNgaySinh.Margin = new System.Windows.Forms.Padding(2);
             this.DateNgaySinh.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.DateNgaySinh.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
@@ -163,6 +169,7 @@
             // 
             // txtHoTenNguoiDung
             // 
+            this.txtHoTenNguoiDung.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtHoTenNguoiDung.BackColor = System.Drawing.Color.Transparent;
             this.txtHoTenNguoiDung.BaseColor = System.Drawing.Color.White;
             this.txtHoTenNguoiDung.BorderColor = System.Drawing.Color.Black;
@@ -171,17 +178,18 @@
             this.txtHoTenNguoiDung.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtHoTenNguoiDung.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtHoTenNguoiDung.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHoTenNguoiDung.Location = new System.Drawing.Point(583, 190);
+            this.txtHoTenNguoiDung.Location = new System.Drawing.Point(685, 313);
             this.txtHoTenNguoiDung.Margin = new System.Windows.Forms.Padding(2);
             this.txtHoTenNguoiDung.Name = "txtHoTenNguoiDung";
             this.txtHoTenNguoiDung.PasswordChar = '\0';
             this.txtHoTenNguoiDung.Radius = 10;
             this.txtHoTenNguoiDung.SelectedText = "";
-            this.txtHoTenNguoiDung.Size = new System.Drawing.Size(167, 39);
+            this.txtHoTenNguoiDung.Size = new System.Drawing.Size(243, 39);
             this.txtHoTenNguoiDung.TabIndex = 118;
             // 
             // txtMaNguoiDung
             // 
+            this.txtMaNguoiDung.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtMaNguoiDung.BackColor = System.Drawing.Color.Transparent;
             this.txtMaNguoiDung.BaseColor = System.Drawing.Color.White;
             this.txtMaNguoiDung.BorderColor = System.Drawing.Color.Black;
@@ -190,7 +198,7 @@
             this.txtMaNguoiDung.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtMaNguoiDung.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtMaNguoiDung.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaNguoiDung.Location = new System.Drawing.Point(212, 190);
+            this.txtMaNguoiDung.Location = new System.Drawing.Point(314, 313);
             this.txtMaNguoiDung.Margin = new System.Windows.Forms.Padding(2);
             this.txtMaNguoiDung.Name = "txtMaNguoiDung";
             this.txtMaNguoiDung.PasswordChar = '\0';
@@ -201,9 +209,10 @@
             // 
             // gunaLabel7
             // 
+            this.gunaLabel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.gunaLabel7.AutoSize = true;
             this.gunaLabel7.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel7.Location = new System.Drawing.Point(34, 377);
+            this.gunaLabel7.Location = new System.Drawing.Point(136, 586);
             this.gunaLabel7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel7.Name = "gunaLabel7";
             this.gunaLabel7.Size = new System.Drawing.Size(69, 30);
@@ -212,9 +221,10 @@
             // 
             // gunaLabel6
             // 
+            this.gunaLabel6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.gunaLabel6.AutoSize = true;
             this.gunaLabel6.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel6.Location = new System.Drawing.Point(483, 310);
+            this.gunaLabel6.Location = new System.Drawing.Point(585, 490);
             this.gunaLabel6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel6.Name = "gunaLabel6";
             this.gunaLabel6.Size = new System.Drawing.Size(86, 30);
@@ -223,9 +233,10 @@
             // 
             // gunaLabel5
             // 
+            this.gunaLabel5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.gunaLabel5.AutoSize = true;
             this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel5.Location = new System.Drawing.Point(33, 310);
+            this.gunaLabel5.Location = new System.Drawing.Point(135, 490);
             this.gunaLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel5.Name = "gunaLabel5";
             this.gunaLabel5.Size = new System.Drawing.Size(154, 30);
@@ -234,9 +245,10 @@
             // 
             // gunaLabel4
             // 
+            this.gunaLabel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel4.Location = new System.Drawing.Point(484, 249);
+            this.gunaLabel4.Location = new System.Drawing.Point(586, 399);
             this.gunaLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel4.Name = "gunaLabel4";
             this.gunaLabel4.Size = new System.Drawing.Size(106, 30);
@@ -245,9 +257,10 @@
             // 
             // gunaLabel3
             // 
+            this.gunaLabel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.Location = new System.Drawing.Point(34, 249);
+            this.gunaLabel3.Location = new System.Drawing.Point(136, 399);
             this.gunaLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel3.Name = "gunaLabel3";
             this.gunaLabel3.Size = new System.Drawing.Size(118, 30);
@@ -256,9 +269,10 @@
             // 
             // gunaLabel2
             // 
+            this.gunaLabel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.Location = new System.Drawing.Point(484, 190);
+            this.gunaLabel2.Location = new System.Drawing.Point(586, 313);
             this.gunaLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel2.Name = "gunaLabel2";
             this.gunaLabel2.Size = new System.Drawing.Size(85, 30);
@@ -267,9 +281,10 @@
             // 
             // gunaLabel1
             // 
+            this.gunaLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.Location = new System.Drawing.Point(34, 190);
+            this.gunaLabel1.Location = new System.Drawing.Point(136, 313);
             this.gunaLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(180, 30);
@@ -278,6 +293,7 @@
             // 
             // btnXoa
             // 
+            this.btnXoa.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnXoa.AnimationHoverSpeed = 0.07F;
             this.btnXoa.AnimationSpeed = 0.03F;
             this.btnXoa.BackColor = System.Drawing.Color.Transparent;
@@ -289,7 +305,7 @@
             this.btnXoa.ForeColor = System.Drawing.Color.White;
             this.btnXoa.Image = null;
             this.btnXoa.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnXoa.Location = new System.Drawing.Point(639, 377);
+            this.btnXoa.Location = new System.Drawing.Point(741, 596);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -298,7 +314,7 @@
             this.btnXoa.OnHoverImage = null;
             this.btnXoa.OnPressedColor = System.Drawing.Color.Black;
             this.btnXoa.Radius = 15;
-            this.btnXoa.Size = new System.Drawing.Size(100, 39);
+            this.btnXoa.Size = new System.Drawing.Size(100, 47);
             this.btnXoa.TabIndex = 128;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -306,6 +322,7 @@
             // 
             // btnLuu
             // 
+            this.btnLuu.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnLuu.AnimationHoverSpeed = 0.07F;
             this.btnLuu.AnimationSpeed = 0.03F;
             this.btnLuu.BackColor = System.Drawing.Color.Transparent;
@@ -317,7 +334,7 @@
             this.btnLuu.ForeColor = System.Drawing.Color.White;
             this.btnLuu.Image = null;
             this.btnLuu.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnLuu.Location = new System.Drawing.Point(512, 377);
+            this.btnLuu.Location = new System.Drawing.Point(614, 596);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -326,7 +343,7 @@
             this.btnLuu.OnHoverImage = null;
             this.btnLuu.OnPressedColor = System.Drawing.Color.Black;
             this.btnLuu.Radius = 15;
-            this.btnLuu.Size = new System.Drawing.Size(100, 39);
+            this.btnLuu.Size = new System.Drawing.Size(100, 47);
             this.btnLuu.TabIndex = 129;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -334,8 +351,9 @@
             // 
             // pcb
             // 
-            this.pcb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pcb.Location = new System.Drawing.Point(230, 11);
+            this.pcb.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pcb.Image = ((System.Drawing.Image)(resources.GetObject("pcb.Image")));
+            this.pcb.Location = new System.Drawing.Point(358, 101);
             this.pcb.Name = "pcb";
             this.pcb.Size = new System.Drawing.Size(300, 150);
             this.pcb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -347,7 +365,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(796, 456);
+            this.ClientSize = new System.Drawing.Size(1061, 793);
             this.Controls.Add(this.pcb);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.btnXoa);

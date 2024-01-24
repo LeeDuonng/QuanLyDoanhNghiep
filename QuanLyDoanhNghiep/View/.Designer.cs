@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Menu));
-            DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem2 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem2 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.XtraBars.BarButtonItem ribbtnTrangChu;
+            DevExpress.Utils.SuperToolTip superToolTip8 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem8 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem8 = new DevExpress.Utils.ToolTipTitleItem();
             this.repositoryItemPictureEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit();
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
@@ -65,7 +67,6 @@
             this.btnDangXuat = new DevExpress.XtraBars.BarButtonItem();
             this.btnDoiMatKhau = new DevExpress.XtraBars.BarButtonItem();
             this.barEditItem2 = new DevExpress.XtraBars.BarEditItem();
-            this.ribbtnTrangChu = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnDoiMatKhau = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnDangXuat = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnPhieuNhapNguyenLieu = new DevExpress.XtraBars.BarButtonItem();
@@ -116,14 +117,16 @@
             this.ribbonPageGroupKho = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupKinhDoanh = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupNhanSu = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroupTaiChinh = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemHypertextLabel1 = new DevExpress.XtraEditors.Repository.RepositoryItemHypertextLabel();
             this.panelMain = new System.Windows.Forms.Panel();
             this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
+            ribbtnTrangChu = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemHypertextLabel1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
             this.SuspendLayout();
             // 
             // repositoryItemPictureEdit2
@@ -167,7 +170,7 @@
             this.btnDangXuat,
             this.btnDoiMatKhau,
             this.barEditItem2,
-            this.ribbtnTrangChu,
+            ribbtnTrangChu,
             this.barBtnDoiMatKhau,
             this.barBtnDangXuat,
             this.barBtnPhieuNhapNguyenLieu,
@@ -196,7 +199,7 @@
             this.barKhoSanPham});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
             this.ribbon.Margin = new System.Windows.Forms.Padding(64, 61, 64, 61);
-            this.ribbon.MaxItemId = 71;
+            this.ribbon.MaxItemId = 72;
             this.ribbon.Name = "ribbon";
             this.ribbon.OptionsMenuMinWidth = 6422;
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -466,17 +469,38 @@
             // 
             // ribbtnTrangChu
             // 
-            this.ribbtnTrangChu.Caption = "Trang Chủ ";
-            this.ribbtnTrangChu.Id = 41;
-            this.ribbtnTrangChu.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbtnTrangChu.ImageOptions.Image")));
-            this.ribbtnTrangChu.Name = "ribbtnTrangChu";
-            this.ribbtnTrangChu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.ribbtnTrangChu_ItemClick);
+            ribbtnTrangChu.AllowHtmlText = DevExpress.Utils.DefaultBoolean.False;
+            ribbtnTrangChu.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
+            ribbtnTrangChu.Caption = "Trang Chủ";
+            ribbtnTrangChu.DropDownControl = this.popupMenu1;
+            ribbtnTrangChu.Id = 41;
+            ribbtnTrangChu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ribbtnTrangChu.ImageOptions.SvgImage")));
+            ribbtnTrangChu.ItemAppearance.Disabled.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            ribbtnTrangChu.ItemAppearance.Disabled.Options.UseFont = true;
+            ribbtnTrangChu.ItemAppearance.Hovered.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            ribbtnTrangChu.ItemAppearance.Hovered.Options.UseFont = true;
+            ribbtnTrangChu.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            ribbtnTrangChu.ItemAppearance.Normal.Options.UseFont = true;
+            ribbtnTrangChu.ItemAppearance.Pressed.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            ribbtnTrangChu.ItemAppearance.Pressed.Options.UseFont = true;
+            ribbtnTrangChu.ItemInMenuAppearance.Disabled.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            ribbtnTrangChu.ItemInMenuAppearance.Disabled.Options.UseFont = true;
+            ribbtnTrangChu.ItemInMenuAppearance.Hovered.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            ribbtnTrangChu.ItemInMenuAppearance.Hovered.Options.UseFont = true;
+            ribbtnTrangChu.ItemInMenuAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            ribbtnTrangChu.ItemInMenuAppearance.Normal.Options.UseFont = true;
+            ribbtnTrangChu.ItemInMenuAppearance.Pressed.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            ribbtnTrangChu.ItemInMenuAppearance.Pressed.Options.UseFont = true;
+            ribbtnTrangChu.Name = "ribbtnTrangChu";
+            ribbtnTrangChu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.ribbtnTrangChu_ItemClick);
             // 
             // barBtnDoiMatKhau
             // 
             this.barBtnDoiMatKhau.Caption = "Đổi Mật Khẩu ";
             this.barBtnDoiMatKhau.Id = 42;
-            this.barBtnDoiMatKhau.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnDoiMatKhau.ImageOptions.Image")));
+            this.barBtnDoiMatKhau.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnDoiMatKhau.ImageOptions.SvgImage")));
+            this.barBtnDoiMatKhau.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barBtnDoiMatKhau.ItemAppearance.Normal.Options.UseFont = true;
             this.barBtnDoiMatKhau.Name = "barBtnDoiMatKhau";
             this.barBtnDoiMatKhau.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnDoiMatKhau_ItemClick);
             // 
@@ -484,7 +508,9 @@
             // 
             this.barBtnDangXuat.Caption = "Đăng Xuất ";
             this.barBtnDangXuat.Id = 43;
-            this.barBtnDangXuat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnDangXuat.ImageOptions.Image")));
+            this.barBtnDangXuat.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnDangXuat.ImageOptions.SvgImage")));
+            this.barBtnDangXuat.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barBtnDangXuat.ItemAppearance.Normal.Options.UseFont = true;
             this.barBtnDangXuat.Name = "barBtnDangXuat";
             this.barBtnDangXuat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnDangXuat_ItemClick);
             // 
@@ -492,7 +518,13 @@
             // 
             this.barBtnPhieuNhapNguyenLieu.Caption = "Phiếu Nhập Nguyên Liệu ";
             this.barBtnPhieuNhapNguyenLieu.Id = 44;
-            this.barBtnPhieuNhapNguyenLieu.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnPhieuNhapNguyenLieu.ImageOptions.Image")));
+            this.barBtnPhieuNhapNguyenLieu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnPhieuNhapNguyenLieu.ImageOptions.SvgImage")));
+            this.barBtnPhieuNhapNguyenLieu.ItemAppearance.Disabled.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barBtnPhieuNhapNguyenLieu.ItemAppearance.Disabled.Options.UseFont = true;
+            this.barBtnPhieuNhapNguyenLieu.ItemAppearance.Normal.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barBtnPhieuNhapNguyenLieu.ItemAppearance.Normal.Options.UseFont = true;
+            this.barBtnPhieuNhapNguyenLieu.ItemInMenuAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barBtnPhieuNhapNguyenLieu.ItemInMenuAppearance.Normal.Options.UseFont = true;
             this.barBtnPhieuNhapNguyenLieu.Name = "barBtnPhieuNhapNguyenLieu";
             this.barBtnPhieuNhapNguyenLieu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnPhieuNhapNguyenLieu_ItemClick);
             // 
@@ -500,7 +532,9 @@
             // 
             this.barBtnPhieuSanXuat.Caption = "Phiếu Sản Xuất";
             this.barBtnPhieuSanXuat.Id = 45;
-            this.barBtnPhieuSanXuat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnPhieuSanXuat.ImageOptions.Image")));
+            this.barBtnPhieuSanXuat.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnPhieuSanXuat.ImageOptions.SvgImage")));
+            this.barBtnPhieuSanXuat.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barBtnPhieuSanXuat.ItemAppearance.Normal.Options.UseFont = true;
             this.barBtnPhieuSanXuat.Name = "barBtnPhieuSanXuat";
             this.barBtnPhieuSanXuat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnPhieuSanXuat_ItemClick);
             // 
@@ -508,7 +542,9 @@
             // 
             this.barBtnPhieuXuatKho.Caption = "Phiếu Xuất Kho ";
             this.barBtnPhieuXuatKho.Id = 46;
-            this.barBtnPhieuXuatKho.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnPhieuXuatKho.ImageOptions.Image")));
+            this.barBtnPhieuXuatKho.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnPhieuXuatKho.ImageOptions.SvgImage")));
+            this.barBtnPhieuXuatKho.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barBtnPhieuXuatKho.ItemAppearance.Normal.Options.UseFont = true;
             this.barBtnPhieuXuatKho.Name = "barBtnPhieuXuatKho";
             this.barBtnPhieuXuatKho.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnPhieuXuatKho_ItemClick);
             // 
@@ -516,7 +552,9 @@
             // 
             this.barBtnDonDatHang.Caption = "Đơn Đặt Hàng ";
             this.barBtnDonDatHang.Id = 47;
-            this.barBtnDonDatHang.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnDonDatHang.ImageOptions.Image")));
+            this.barBtnDonDatHang.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnDonDatHang.ImageOptions.SvgImage")));
+            this.barBtnDonDatHang.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barBtnDonDatHang.ItemAppearance.Normal.Options.UseFont = true;
             this.barBtnDonDatHang.Name = "barBtnDonDatHang";
             this.barBtnDonDatHang.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnDonDatHang_ItemClick);
             // 
@@ -524,7 +562,9 @@
             // 
             this.barBtnChamCong.Caption = "Chấm Công ";
             this.barBtnChamCong.Id = 48;
-            this.barBtnChamCong.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnChamCong.ImageOptions.Image")));
+            this.barBtnChamCong.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnChamCong.ImageOptions.SvgImage")));
+            this.barBtnChamCong.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barBtnChamCong.ItemAppearance.Normal.Options.UseFont = true;
             this.barBtnChamCong.Name = "barBtnChamCong";
             this.barBtnChamCong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnChamCong_ItemClick);
             // 
@@ -532,7 +572,9 @@
             // 
             this.barBtnThongTinCongViec.Caption = "Thông Tin Công Việc ";
             this.barBtnThongTinCongViec.Id = 49;
-            this.barBtnThongTinCongViec.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnThongTinCongViec.ImageOptions.Image")));
+            this.barBtnThongTinCongViec.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnThongTinCongViec.ImageOptions.SvgImage")));
+            this.barBtnThongTinCongViec.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barBtnThongTinCongViec.ItemAppearance.Normal.Options.UseFont = true;
             this.barBtnThongTinCongViec.Name = "barBtnThongTinCongViec";
             this.barBtnThongTinCongViec.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnThongTinCongViec_ItemClick);
             // 
@@ -540,7 +582,9 @@
             // 
             this.barBtnHopDong.Caption = "Hợp Đồng ";
             this.barBtnHopDong.Id = 50;
-            this.barBtnHopDong.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnHopDong.ImageOptions.Image")));
+            this.barBtnHopDong.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnHopDong.ImageOptions.SvgImage")));
+            this.barBtnHopDong.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barBtnHopDong.ItemAppearance.Normal.Options.UseFont = true;
             this.barBtnHopDong.Name = "barBtnHopDong";
             this.barBtnHopDong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnHopDong_ItemClick);
             // 
@@ -569,7 +613,9 @@
             // 
             this.barBtnDoanhThu.Caption = "Doanh Thu ";
             this.barBtnDoanhThu.Id = 54;
-            this.barBtnDoanhThu.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnDoanhThu.ImageOptions.Image")));
+            this.barBtnDoanhThu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnDoanhThu.ImageOptions.SvgImage")));
+            this.barBtnDoanhThu.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barBtnDoanhThu.ItemAppearance.Normal.Options.UseFont = true;
             this.barBtnDoanhThu.Name = "barBtnDoanhThu";
             this.barBtnDoanhThu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnDoanhThu_ItemClick);
             // 
@@ -577,7 +623,9 @@
             // 
             this.barBtnCongNo.Caption = "Thu Công Nợ ";
             this.barBtnCongNo.Id = 55;
-            this.barBtnCongNo.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnCongNo.ImageOptions.Image")));
+            this.barBtnCongNo.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnCongNo.ImageOptions.SvgImage")));
+            this.barBtnCongNo.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barBtnCongNo.ItemAppearance.Normal.Options.UseFont = true;
             this.barBtnCongNo.Name = "barBtnCongNo";
             this.barBtnCongNo.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnCongNo_ItemClick);
             // 
@@ -585,7 +633,9 @@
             // 
             this.barBtnLuongNV.Caption = "Lương Nhân Viên ";
             this.barBtnLuongNV.Id = 56;
-            this.barBtnLuongNV.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnLuongNV.ImageOptions.Image")));
+            this.barBtnLuongNV.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnLuongNV.ImageOptions.SvgImage")));
+            this.barBtnLuongNV.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barBtnLuongNV.ItemAppearance.Normal.Options.UseFont = true;
             this.barBtnLuongNV.Name = "barBtnLuongNV";
             this.barBtnLuongNV.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnLuongNV_ItemClick);
             // 
@@ -593,7 +643,9 @@
             // 
             this.barBtnNguyenLieu.Caption = "Nguyên Liệu ";
             this.barBtnNguyenLieu.Id = 57;
-            this.barBtnNguyenLieu.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnNguyenLieu.ImageOptions.Image")));
+            this.barBtnNguyenLieu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnNguyenLieu.ImageOptions.SvgImage")));
+            this.barBtnNguyenLieu.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barBtnNguyenLieu.ItemAppearance.Normal.Options.UseFont = true;
             this.barBtnNguyenLieu.Name = "barBtnNguyenLieu";
             this.barBtnNguyenLieu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnNguyenLieu_ItemClick);
             // 
@@ -601,7 +653,9 @@
             // 
             this.barBtnNhaCungCap.Caption = "Nhà Cung Cấp ";
             this.barBtnNhaCungCap.Id = 58;
-            this.barBtnNhaCungCap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnNhaCungCap.ImageOptions.Image")));
+            this.barBtnNhaCungCap.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnNhaCungCap.ImageOptions.SvgImage")));
+            this.barBtnNhaCungCap.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barBtnNhaCungCap.ItemAppearance.Normal.Options.UseFont = true;
             this.barBtnNhaCungCap.Name = "barBtnNhaCungCap";
             this.barBtnNhaCungCap.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnNhaCungCap_ItemClick);
             // 
@@ -609,7 +663,9 @@
             // 
             this.barBtnKhachHang.Caption = "Khách Hàng ";
             this.barBtnKhachHang.Id = 59;
-            this.barBtnKhachHang.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnKhachHang.ImageOptions.Image")));
+            this.barBtnKhachHang.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnKhachHang.ImageOptions.SvgImage")));
+            this.barBtnKhachHang.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barBtnKhachHang.ItemAppearance.Normal.Options.UseFont = true;
             this.barBtnKhachHang.Name = "barBtnKhachHang";
             this.barBtnKhachHang.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnKhachHang_ItemClick);
             // 
@@ -617,7 +673,9 @@
             // 
             this.barBtnSanPham.Caption = "Sản Phẩm ";
             this.barBtnSanPham.Id = 60;
-            this.barBtnSanPham.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnSanPham.ImageOptions.Image")));
+            this.barBtnSanPham.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnSanPham.ImageOptions.SvgImage")));
+            this.barBtnSanPham.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barBtnSanPham.ItemAppearance.Normal.Options.UseFont = true;
             this.barBtnSanPham.Name = "barBtnSanPham";
             this.barBtnSanPham.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnSanPham_ItemClick);
             // 
@@ -625,7 +683,9 @@
             // 
             this.barBtnNguoiDung.Caption = "Người Dùng ";
             this.barBtnNguoiDung.Id = 61;
-            this.barBtnNguoiDung.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnNguoiDung.ImageOptions.Image")));
+            this.barBtnNguoiDung.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnNguoiDung.ImageOptions.SvgImage")));
+            this.barBtnNguoiDung.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barBtnNguoiDung.ItemAppearance.Normal.Options.UseFont = true;
             this.barBtnNguoiDung.Name = "barBtnNguoiDung";
             this.barBtnNguoiDung.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnNguoiDung_ItemClick);
             // 
@@ -633,7 +693,9 @@
             // 
             this.barBtnChucVu.Caption = "Chức Vụ";
             this.barBtnChucVu.Id = 62;
-            this.barBtnChucVu.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnChucVu.ImageOptions.Image")));
+            this.barBtnChucVu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnChucVu.ImageOptions.SvgImage")));
+            this.barBtnChucVu.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barBtnChucVu.ItemAppearance.Normal.Options.UseFont = true;
             this.barBtnChucVu.Name = "barBtnChucVu";
             this.barBtnChucVu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnChucVu_ItemClick);
             // 
@@ -641,7 +703,9 @@
             // 
             this.barBtnPhongBan.Caption = "Phòng Ban ";
             this.barBtnPhongBan.Id = 63;
-            this.barBtnPhongBan.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnPhongBan.ImageOptions.Image")));
+            this.barBtnPhongBan.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnPhongBan.ImageOptions.SvgImage")));
+            this.barBtnPhongBan.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barBtnPhongBan.ItemAppearance.Normal.Options.UseFont = true;
             this.barBtnPhongBan.Name = "barBtnPhongBan";
             this.barBtnPhongBan.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnPhongBan_ItemClick);
             // 
@@ -649,7 +713,9 @@
             // 
             this.barBtnThongTinNguoiDung.Caption = "Thông Tin Người Dùng ";
             this.barBtnThongTinNguoiDung.Id = 64;
-            this.barBtnThongTinNguoiDung.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnThongTinNguoiDung.ImageOptions.Image")));
+            this.barBtnThongTinNguoiDung.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnThongTinNguoiDung.ImageOptions.SvgImage")));
+            this.barBtnThongTinNguoiDung.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barBtnThongTinNguoiDung.ItemAppearance.Normal.Options.UseFont = true;
             this.barBtnThongTinNguoiDung.Name = "barBtnThongTinNguoiDung";
             this.barBtnThongTinNguoiDung.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnThongTinNguoiDung_ItemClick);
             // 
@@ -657,6 +723,9 @@
             // 
             this.barBtnTraCongNo.Caption = "Trả Công Nợ";
             this.barBtnTraCongNo.Id = 65;
+            this.barBtnTraCongNo.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnTraCongNo.ImageOptions.SvgImage")));
+            this.barBtnTraCongNo.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barBtnTraCongNo.ItemAppearance.Normal.Options.UseFont = true;
             this.barBtnTraCongNo.Name = "barBtnTraCongNo";
             this.barBtnTraCongNo.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnTraCongNo_ItemClick);
             // 
@@ -664,6 +733,9 @@
             // 
             this.barKhoNguyenLieu.Caption = "Kho Nguyên Liệu";
             this.barKhoNguyenLieu.Id = 66;
+            this.barKhoNguyenLieu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barKhoNguyenLieu.ImageOptions.SvgImage")));
+            this.barKhoNguyenLieu.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barKhoNguyenLieu.ItemAppearance.Normal.Options.UseFont = true;
             this.barKhoNguyenLieu.Name = "barKhoNguyenLieu";
             this.barKhoNguyenLieu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barKhoNguyenLieu_ItemClick);
             // 
@@ -671,11 +743,16 @@
             // 
             this.barKhoSanPham.Caption = "Kho Sản Phẩm";
             this.barKhoSanPham.Id = 67;
+            this.barKhoSanPham.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barKhoSanPham.ImageOptions.SvgImage")));
+            this.barKhoSanPham.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barKhoSanPham.ItemAppearance.Normal.Options.UseFont = true;
             this.barKhoSanPham.Name = "barKhoSanPham";
             this.barKhoSanPham.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barKhoSanPham_ItemClick);
             // 
             // ribbonAdmin
             // 
+            this.ribbonAdmin.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ribbonAdmin.Appearance.Options.UseFont = true;
             this.ribbonAdmin.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup1,
             this.ribbonPageGroup2,
@@ -691,11 +768,11 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.barEditItem1);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnTrangChu);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            toolTipTitleItem2.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
-            toolTipTitleItem2.Text = "<b></b>";
-            superToolTip2.Items.Add(toolTipItem2);
-            superToolTip2.Items.Add(toolTipTitleItem2);
-            this.ribbonPageGroup1.SuperTip = superToolTip2;
+            toolTipTitleItem8.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
+            toolTipTitleItem8.Text = "<b></b>";
+            superToolTip8.Items.Add(toolTipItem8);
+            superToolTip8.Items.Add(toolTipTitleItem8);
+            this.ribbonPageGroup1.SuperTip = superToolTip8;
             // 
             // ribbonPageGroup2
             // 
@@ -740,6 +817,8 @@
             // 
             // ribbonTrangChu
             // 
+            this.ribbonTrangChu.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ribbonTrangChu.Appearance.Options.UseFont = true;
             this.ribbonTrangChu.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup11,
             this.ribbonPageGroup17,
@@ -749,7 +828,7 @@
             // 
             // ribbonPageGroup11
             // 
-            this.ribbonPageGroup11.ItemLinks.Add(this.ribbtnTrangChu);
+            this.ribbonPageGroup11.ItemLinks.Add(ribbtnTrangChu, false, "", "", true);
             this.ribbonPageGroup11.Name = "ribbonPageGroup11";
             // 
             // ribbonPageGroup17
@@ -759,6 +838,7 @@
             // 
             // ribbonPageGroup12
             // 
+            this.ribbonPageGroup12.AllowTextClipping = false;
             this.ribbonPageGroup12.ItemLinks.Add(this.barBtnDoiMatKhau);
             this.ribbonPageGroup12.ItemLinks.Add(this.barBtnDangXuat);
             this.ribbonPageGroup12.Name = "ribbonPageGroup12";
@@ -766,6 +846,8 @@
             // 
             // ribbonKho
             // 
+            this.ribbonKho.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ribbonKho.Appearance.Options.UseFont = true;
             this.ribbonKho.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup7,
             this.ribbonPageGroup13});
@@ -774,6 +856,7 @@
             // 
             // ribbonPageGroup7
             // 
+            this.ribbonPageGroup7.AllowTextClipping = false;
             this.ribbonPageGroup7.ItemLinks.Add(this.barBtnPhieuNhapNguyenLieu);
             this.ribbonPageGroup7.ItemLinks.Add(this.barBtnPhieuSanXuat);
             this.ribbonPageGroup7.ItemLinks.Add(this.barBtnPhieuXuatKho);
@@ -789,6 +872,8 @@
             // 
             // ribbonKinhDoanh
             // 
+            this.ribbonKinhDoanh.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ribbonKinhDoanh.Appearance.Options.UseFont = true;
             this.ribbonKinhDoanh.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup8});
             this.ribbonKinhDoanh.Name = "ribbonKinhDoanh";
@@ -802,6 +887,8 @@
             // 
             // ribbonNhanSu
             // 
+            this.ribbonNhanSu.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ribbonNhanSu.Appearance.Options.UseFont = true;
             this.ribbonNhanSu.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup9});
             this.ribbonNhanSu.Name = "ribbonNhanSu";
@@ -817,6 +904,8 @@
             // 
             // ribbonTaiChinh
             // 
+            this.ribbonTaiChinh.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ribbonTaiChinh.Appearance.Options.UseFont = true;
             this.ribbonTaiChinh.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup14});
             this.ribbonTaiChinh.Name = "ribbonTaiChinh";
@@ -833,11 +922,12 @@
             // 
             // ribbonQuanLy
             // 
+            this.ribbonQuanLy.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ribbonQuanLy.Appearance.Options.UseFont = true;
             this.ribbonQuanLy.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroupKho,
             this.ribbonPageGroupKinhDoanh,
-            this.ribbonPageGroupNhanSu,
-            this.ribbonPageGroupTaiChinh});
+            this.ribbonPageGroupNhanSu});
             this.ribbonQuanLy.Name = "ribbonQuanLy";
             this.ribbonQuanLy.Text = "QUẢN LÝ ";
             // 
@@ -862,11 +952,6 @@
             this.ribbonPageGroupNhanSu.ItemLinks.Add(this.barBtnPhongBan);
             this.ribbonPageGroupNhanSu.Name = "ribbonPageGroupNhanSu";
             this.ribbonPageGroupNhanSu.Text = "Nhân Sự ";
-            // 
-            // ribbonPageGroupTaiChinh
-            // 
-            this.ribbonPageGroupTaiChinh.Name = "ribbonPageGroupTaiChinh";
-            this.ribbonPageGroupTaiChinh.Text = "Tài chính";
             // 
             // repositoryItemHypertextLabel1
             // 
@@ -893,6 +978,11 @@
             this.ribbonPage5.Name = "ribbonPage5";
             this.ribbonPage5.Text = "BỘ PHẬN TÀI CHÍNH ";
             // 
+            // popupMenu1
+            // 
+            this.popupMenu1.Name = "popupMenu1";
+            this.popupMenu1.Ribbon = this.ribbon;
+            // 
             // frm_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -905,9 +995,11 @@
             this.Ribbon = this.ribbon;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CÔNG TY TNHH DỊCH VỤ TỔNG HỢP VẬN TẢI ĐIỆN TỬ PHÚC KHANG ";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemHypertextLabel1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -965,7 +1057,6 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup9;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonTrangChu;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup11;
-        private DevExpress.XtraBars.BarButtonItem ribbtnTrangChu;
         private DevExpress.XtraBars.BarButtonItem barBtnDoiMatKhau;
         private DevExpress.XtraBars.BarButtonItem barBtnDangXuat;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup12;
@@ -999,10 +1090,10 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupNhanSu;
         private DevExpress.XtraBars.BarButtonItem barBtnThongTinNguoiDung;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup17;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupTaiChinh;
         private DevExpress.XtraBars.BarButtonItem barBtnTraCongNo;
         private DevExpress.XtraBars.BarButtonItem barKhoNguyenLieu;
         private DevExpress.XtraBars.BarButtonItem barKhoSanPham;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup13;
+        private DevExpress.XtraBars.PopupMenu popupMenu1;
     }
 }

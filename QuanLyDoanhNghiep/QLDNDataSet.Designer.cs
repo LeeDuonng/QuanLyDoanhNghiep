@@ -3107,7 +3107,7 @@ namespace QuanLyDoanhNghiep {
             
             private global::System.Data.DataColumn columnNgayNhap;
             
-            private global::System.Data.DataColumn columnTổng_công_nợ;
+            private global::System.Data.DataColumn columnThanhToan;
             
             private global::System.Data.DataColumn columnTrangThai;
             
@@ -3170,9 +3170,9 @@ namespace QuanLyDoanhNghiep {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Tổng_công_nợColumn {
+            public global::System.Data.DataColumn ThanhToanColumn {
                 get {
-                    return this.columnTổng_công_nợ;
+                    return this.columnThanhToan;
                 }
             }
             
@@ -3221,13 +3221,13 @@ namespace QuanLyDoanhNghiep {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public RptThongKeTraCongNoRow AddRptThongKeTraCongNoRow(string MaPhieuNhap, string TenNhaCungCap, System.DateTime NgayNhap, int Tổng_công_nợ, string TrangThai) {
+            public RptThongKeTraCongNoRow AddRptThongKeTraCongNoRow(string MaPhieuNhap, string TenNhaCungCap, System.DateTime NgayNhap, string ThanhToan, string TrangThai) {
                 RptThongKeTraCongNoRow rowRptThongKeTraCongNoRow = ((RptThongKeTraCongNoRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         MaPhieuNhap,
                         TenNhaCungCap,
                         NgayNhap,
-                        Tổng_công_nợ,
+                        ThanhToan,
                         TrangThai};
                 rowRptThongKeTraCongNoRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowRptThongKeTraCongNoRow);
@@ -3261,7 +3261,7 @@ namespace QuanLyDoanhNghiep {
                 this.columnMaPhieuNhap = base.Columns["MaPhieuNhap"];
                 this.columnTenNhaCungCap = base.Columns["TenNhaCungCap"];
                 this.columnNgayNhap = base.Columns["NgayNhap"];
-                this.columnTổng_công_nợ = base.Columns["Tổng công nợ"];
+                this.columnThanhToan = base.Columns["ThanhToan"];
                 this.columnTrangThai = base.Columns["TrangThai"];
             }
             
@@ -3274,8 +3274,8 @@ namespace QuanLyDoanhNghiep {
                 base.Columns.Add(this.columnTenNhaCungCap);
                 this.columnNgayNhap = new global::System.Data.DataColumn("NgayNhap", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNgayNhap);
-                this.columnTổng_công_nợ = new global::System.Data.DataColumn("Tổng công nợ", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTổng_công_nợ);
+                this.columnThanhToan = new global::System.Data.DataColumn("ThanhToan", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnThanhToan);
                 this.columnTrangThai = new global::System.Data.DataColumn("TrangThai", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTrangThai);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
@@ -3284,7 +3284,7 @@ namespace QuanLyDoanhNghiep {
                 this.columnMaPhieuNhap.Unique = true;
                 this.columnMaPhieuNhap.MaxLength = 50;
                 this.columnTenNhaCungCap.MaxLength = 100;
-                this.columnTổng_công_nợ.ReadOnly = true;
+                this.columnThanhToan.ReadOnly = true;
                 this.columnTrangThai.MaxLength = 50;
             }
             
@@ -4773,17 +4773,17 @@ namespace QuanLyDoanhNghiep {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int Tổng_công_nợ {
+            public int ThanhToan {
                 get {
                     try {
-                        return ((int)(this[this.tableRptThongKeTraCongNo.Tổng_công_nợColumn]));
+                        return ((int)(this[this.tableRptThongKeTraCongNo.ThanhToanColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Tổng công nợ\' in table \'RptThongKeTraCongNo\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'ThanhToan\' in table \'RptThongKeTraCongNo\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableRptThongKeTraCongNo.Tổng_công_nợColumn] = value;
+                    this[this.tableRptThongKeTraCongNo.ThanhToanColumn] = value;
                 }
             }
             
@@ -4829,14 +4829,14 @@ namespace QuanLyDoanhNghiep {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsTổng_công_nợNull() {
-                return this.IsNull(this.tableRptThongKeTraCongNo.Tổng_công_nợColumn);
+            public bool IsThanhToanNull() {
+                return this.IsNull(this.tableRptThongKeTraCongNo.ThanhToanColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetTổng_công_nợNull() {
-                this[this.tableRptThongKeTraCongNo.Tổng_công_nợColumn] = global::System.Convert.DBNull;
+            public void SetThanhToanNull() {
+                this[this.tableRptThongKeTraCongNo.ThanhToanColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6730,7 +6730,7 @@ namespace QuanLyDoanhNghiep.QLDNDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("MaPhieuNhap", "MaPhieuNhap");
             tableMapping.ColumnMappings.Add("TenNhaCungCap", "TenNhaCungCap");
             tableMapping.ColumnMappings.Add("NgayNhap", "NgayNhap");
-            tableMapping.ColumnMappings.Add("Tổng công nợ", "Tổng công nợ");
+            tableMapping.ColumnMappings.Add("Tổng công nợ", "ThanhToan");
             tableMapping.ColumnMappings.Add("TrangThai", "TrangThai");
             this._adapter.TableMappings.Add(tableMapping);
         }

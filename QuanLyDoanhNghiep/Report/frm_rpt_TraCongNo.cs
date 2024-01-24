@@ -25,7 +25,6 @@ namespace QuanLyDoanhNghiep.Report
         private clsEventArgs ev = new clsEventArgs("");
         private void LoadRpt()
         {
-            //msql = "exec RptDonDatHang N'PXK_20231223122237_KH005'";
             msql = "exec RptThongKeTraCongNo";
             DataTable dt = comm.GetDataTable(mconnectstring, msql, "");
             ReportDataSource reportDataSource = new ReportDataSource("DataSet", dt);

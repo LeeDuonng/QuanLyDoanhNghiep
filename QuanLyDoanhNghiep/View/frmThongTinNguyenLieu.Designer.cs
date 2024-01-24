@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmThongTinNguyenLieu));
             this.txtDonGia = new Guna.UI.WinForms.GunaTextBox();
             this.txtSoLuongTonKho = new Guna.UI.WinForms.GunaTextBox();
             this.txtDonViTinh = new Guna.UI.WinForms.GunaTextBox();
@@ -117,10 +118,11 @@
             // 
             // pcb
             // 
-            this.pcb.Location = new System.Drawing.Point(333, 9);
+            this.pcb.Image = ((System.Drawing.Image)(resources.GetObject("pcb.Image")));
+            this.pcb.Location = new System.Drawing.Point(320, 11);
             this.pcb.Margin = new System.Windows.Forms.Padding(2);
             this.pcb.Name = "pcb";
-            this.pcb.Size = new System.Drawing.Size(219, 150);
+            this.pcb.Size = new System.Drawing.Size(276, 155);
             this.pcb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcb.TabIndex = 89;
             this.pcb.TabStop = false;

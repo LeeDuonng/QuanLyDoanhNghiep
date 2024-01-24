@@ -31,7 +31,6 @@ namespace QuanLyDoanhNghiep.View
             dgvNguyenLieu.Columns["TenNguyenLieu"].HeaderText = "Tên Nguyên Liệu";
             dgvNguyenLieu.Columns["DonViTinh"].HeaderText = "Đơn Vị Tính";
             dgvNguyenLieu.Columns["DonGia"].HeaderText = "Đơn Giá";
-          
         }
         private void btnThem_Click(object sender, EventArgs e)
         {

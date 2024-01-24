@@ -14,19 +14,21 @@ namespace QuanLyDoanhNghiep.Report
 {
     public partial class frm_rpt_BangLuongNV : Form
     {
-        public frm_rpt_BangLuongNV()
+        public frm_rpt_BangLuongNV(string ngay)
         {
             InitializeComponent();
+            this.ngay = ngay;   
             LoadRpt();
         }
         public static string mconnectstring = Database.Database.mconnectstring;
         private clsCommonMethod comm = new clsCommonMethod();
         private string msql;
         private clsEventArgs ev = new clsEventArgs("");
-        private string id;
+        private string ngay;
+
         private void LoadRpt()
         {
-            msql = "exec RptBangLuongNV";
+            msql = "exec RptBangLuongNV '"+ ngay + "'";
             DataTable dt = comm.GetDataTable(mconnectstring, msql, "");
             ReportDataSource reportDataSource = new ReportDataSource("DataSet", dt);
             this.reportViewer1.LocalReport.ReportPath = "./rptBangLuongNV.rdlc";

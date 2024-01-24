@@ -21,22 +21,28 @@ namespace QuanLyDoanhNghiep.View
         {
             InitializeComponent();
         }
-
-        private void txtNLMKC_KeyPress(object sender, KeyPressEventArgs e)
+        private bool Checked()
         {
-            if (txtMKM.Text !=  txtNLMKC.Text)
-            {
-                label.Text = "Nhập lại mật khẩu mới chưa trùng khớp";
-            }
+            if((txtMKM.Text == txtNLMKC.Text) && (!string.IsNullOrEmpty(txtMKC.Text)) && (!string.IsNullOrEmpty(txtMKM.Text)) && (!string.IsNullOrEmpty(txtNLMKC.Text)))
+                return true;
+            return false;
         }
 
         private void btnOk_Click(object sender, EventArgs e)
         {
             try
             {
-                msql = "exec LoadDoiMatKhau '" + frmDangNhap.MaNguoiDung + "', '" + txtMKC.Text + "', '" + txtNLMKC.Text + "'";
-                DataTable dt = comm.GetDataTable(mconnectstring, msql, "");
-                ev.QFrmThongBao("Đổi mật khẩu thành công");
+                if (Checked())
+                {
+                    msql = "exec LoadDoiMatKhau '" + frmDangNhap.MaNguoiDung + "', '" + txtMKC.Text + "', '" + txtNLMKC.Text + "'";
+                    DataTable dt = comm.GetDataTable(mconnectstring, msql, "");
+                    if(dt != null) 
+                        ev.QFrmThongBao("Đổi mật khẩu thành công");
+                    else
+                        ev.QFrmThongBao("Đổi mật khẩu không thành công");
+                }
+                else
+                    ev.QFrmThongBao("Vui lòng thử lại");
             }
             catch 
             { 

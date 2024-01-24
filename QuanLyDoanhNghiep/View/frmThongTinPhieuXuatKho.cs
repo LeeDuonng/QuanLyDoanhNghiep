@@ -38,7 +38,7 @@ namespace QuanLyDoanhNghiep.View
 
         private void btnXuatPhieu_Click(object sender, EventArgs e)
         {
-            msql = "update tblPhieuXuatKho set TrangThaiPhieu = N'Đã xuất kho' where MaPhieuXuatKho = '" + id + "'";
+            msql = "update tblPhieuXuatKho set TrangThaiPhieu = N'Đã xuất kho'  , NgayXuatKho = GETDATE() where MaPhieuXuatKho = '" + id + "' ";
             comm.RunSQL(mconnectstring, msql);
             ev.QFrmThongBao("Xuất kho thành công");
             new frm_rpt_PhieuXuatKho(id).ShowDialog();

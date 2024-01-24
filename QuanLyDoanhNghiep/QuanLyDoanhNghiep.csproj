@@ -145,6 +145,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLDNDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QLDNDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLDNDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Report\frm_rpt_BangLuongNV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -613,6 +618,17 @@
     </None>
     <None Include="QLDNDataSet.xss">
       <DependentUpon>QLDNDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLDNDataSet1.xsc">
+      <DependentUpon>QLDNDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLDNDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLDNDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLDNDataSet1.xss">
+      <DependentUpon>QLDNDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

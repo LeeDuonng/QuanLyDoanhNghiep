@@ -101,7 +101,7 @@
             this.btnOk.OnHoverForeColor = System.Drawing.Color.White;
             this.btnOk.OnHoverImage = null;
             this.btnOk.OnPressedColor = System.Drawing.Color.Black;
-            this.btnOk.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnOk.Padding = new System.Windows.Forms.Padding(4);
             this.btnOk.Radius = 15;
             this.btnOk.Size = new System.Drawing.Size(118, 47);
             this.btnOk.TabIndex = 10;
@@ -120,7 +120,7 @@
             this.txtMKC.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtMKC.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMKC.Location = new System.Drawing.Point(284, 187);
-            this.txtMKC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMKC.Margin = new System.Windows.Forms.Padding(2);
             this.txtMKC.Name = "txtMKC";
             this.txtMKC.PasswordChar = '*';
             this.txtMKC.Radius = 15;
@@ -139,7 +139,7 @@
             this.txtMKM.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtMKM.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMKM.Location = new System.Drawing.Point(284, 254);
-            this.txtMKM.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMKM.Margin = new System.Windows.Forms.Padding(2);
             this.txtMKM.Name = "txtMKM";
             this.txtMKM.PasswordChar = '*';
             this.txtMKM.Radius = 15;
@@ -158,7 +158,7 @@
             this.txtNLMKC.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtNLMKC.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNLMKC.Location = new System.Drawing.Point(284, 325);
-            this.txtNLMKC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNLMKC.Margin = new System.Windows.Forms.Padding(2);
             this.txtNLMKC.Name = "txtNLMKC";
             this.txtNLMKC.PasswordChar = '*';
             this.txtNLMKC.Radius = 15;
@@ -170,7 +170,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(179, 20);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(140, 141);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -198,7 +198,7 @@
             this.btnHuy.OnHoverForeColor = System.Drawing.Color.White;
             this.btnHuy.OnHoverImage = null;
             this.btnHuy.OnPressedColor = System.Drawing.Color.Black;
-            this.btnHuy.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnHuy.Padding = new System.Windows.Forms.Padding(4);
             this.btnHuy.Radius = 15;
             this.btnHuy.Size = new System.Drawing.Size(118, 47);
             this.btnHuy.TabIndex = 15;

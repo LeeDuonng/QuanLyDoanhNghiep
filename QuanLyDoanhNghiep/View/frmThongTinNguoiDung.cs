@@ -71,7 +71,7 @@ namespace QuanLyDoanhNghiep.View
                 comm.RunSQL(mconnectstring, msql);
                 SaveHinh();
                 ev.QFrmThongBao("Sửa thành công");
-                this.Close();
+                Loadfrm();
             }
             else
             {
@@ -86,11 +86,8 @@ namespace QuanLyDoanhNghiep.View
                 comm.RunSQL(mconnectstring, msql);
                 SaveHinh();
                 ev.QFrmThongBao("Thêm thành công");
-                this.Close();
+                Loadfrm();
             }
-            var f = new frmThongTinNguoiDung(id);
-            this.Close();
-            new frm_Menu().AddForm(f);
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -98,7 +95,7 @@ namespace QuanLyDoanhNghiep.View
             msql = "exec XoaNguoiDung '" + id + "'";
             comm.RunSQL(mconnectstring, msql);
             ev.QFrmThongBao("Xoá thành công");
-            this.Close();
+            Loadfrm();
         }
 
         private void frmThongTinNguoiDung_Load(object sender, EventArgs e)

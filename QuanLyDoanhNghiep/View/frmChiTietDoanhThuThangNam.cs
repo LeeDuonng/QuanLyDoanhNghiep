@@ -27,6 +27,10 @@ namespace QuanLyDoanhNghiep.View
         {
             msql = "exec LoadChiTietPhieuXuatKho N'"+id+"'";
             dgv.DataSource = comm.GetDataTable(mconnectstring, msql, "hH");
+            dgv.Columns["TenSanPham"].HeaderText = "Tên sản phẩm";
+            dgv.Columns["MauSac"].HeaderText = "Màu sắc";
+            dgv.Columns["DonGia"].HeaderText = "Đơn giá";
+            dgv.Columns["SoLuong"].HeaderText = "Số lượng tồn kho";
         }
     }
 }

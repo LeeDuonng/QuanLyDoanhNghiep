@@ -116,7 +116,6 @@ namespace QuanLyDoanhNghiep.View
                 comm.RunSQL(mconnectstring, msql);
                 SaveHinh();
                 ev.QFrmThongBao("Sửa thành công");
-                this.Close();
             }
             else
             {
@@ -130,16 +129,20 @@ namespace QuanLyDoanhNghiep.View
                 comm.RunSQL(mconnectstring, msql);
                 SaveHinh();
                 ev.QFrmThongBao("Thêm thành công");
-                this.Close();
             }
+            this.Close();
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            msql = "exec XoaSanPham '" + id + "'";
-            comm.RunSQL(mconnectstring, msql);
-            ev.QFrmThongBao("Xoá thành công");
-            this.Close();
+            try
+            {
+                msql = "exec XoaSanPham '" + id + "'";
+                comm.RunSQL(mconnectstring, msql);
+                ev.QFrmThongBao("Xoá thành công");
+                this.Close();
+            }
+            catch { }
         }
 
         private void frmThongTinSanPham_Load(object sender, EventArgs e)

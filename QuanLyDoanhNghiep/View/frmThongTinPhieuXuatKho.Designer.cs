@@ -95,7 +95,7 @@
             this.dgvPhieuXuatKho.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvPhieuXuatKho.RowTemplate.Height = 24;
             this.dgvPhieuXuatKho.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPhieuXuatKho.Size = new System.Drawing.Size(886, 443);
+            this.dgvPhieuXuatKho.Size = new System.Drawing.Size(1432, 651);
             this.dgvPhieuXuatKho.TabIndex = 62;
             this.dgvPhieuXuatKho.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.dgvPhieuXuatKho.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -134,7 +134,7 @@
             this.btnXuatPhieu.ForeColor = System.Drawing.Color.White;
             this.btnXuatPhieu.Image = null;
             this.btnXuatPhieu.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnXuatPhieu.Location = new System.Drawing.Point(649, 63);
+            this.btnXuatPhieu.Location = new System.Drawing.Point(1195, 63);
             this.btnXuatPhieu.Margin = new System.Windows.Forms.Padding(2);
             this.btnXuatPhieu.Name = "btnXuatPhieu";
             this.btnXuatPhieu.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
@@ -155,7 +155,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(276, 9);
+            this.label1.Location = new System.Drawing.Point(549, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(360, 37);
@@ -166,7 +166,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(886, 587);
+            this.ClientSize = new System.Drawing.Size(1432, 795);
             this.Controls.Add(this.dgvPhieuXuatKho);
             this.Controls.Add(this.btnXuatPhieu);
             this.Controls.Add(this.label1);
